@@ -1,10 +1,10 @@
 static class Constantes
 {
   static double
-    g = 9.8, //gravidade
-    e = 1.6*(10^(-19)), //carga elementar
-    c = 3*(10^8), //velocidade da luz no vácuo
-    k0 = 9*(10^9), //constante eletrostática do vácuo  
+    g = 9.8, //gravidade [m/s²]
+    e = 1.6*(10^(-19)), //carga elementar [C]
+    c = 3*(10^8), //velocidade da luz no vácuo [m/s]
+    k0 = 9*(10^9), //constante eletrostática do vácuo   
     p = 10^5, //pressão atmosférica 
     cc = 1, //calor específico da água em cal/g°C
     cj = 4.186, //calor específico da água em J/g°C
