@@ -1,37 +1,45 @@
 abstract class Objeto
 {
-  double x, y, largura, altura;
+  float x, y, largura, altura;
 
   /*gets e sets--------------------------------*/
-  void setX(double x) {    
+  void setX(float x) {    
     this.x = x;
   }
 
-  double getX() {
+  float getX() {
     return x;
   }
+  
+  float getCentroX() {
+    return largura / 2;
+  }
 
-  void setY(double y) {
+  void setY(float y) {
     this.y = y;
   }
 
-  double getY() {
+  float getY() {
     return y;
   }
+  
+  float getCentroY() {
+    return altura / 2;
+  }
 
-  void setAltura(double altura) {
+  void setAltura(float altura) {
     this.altura = altura;
   }
 
-  double getAltura() {
+  float getAltura() {
     return altura;
   }
 
-  void setLargura(double largura) {
+  void setLargura(float largura) {
     this.largura = largura;
   }
 
-  double getLargura() {
+  float getLargura() {
     return largura;
   }
   /*gets e sets--------------------------------*/
@@ -45,7 +53,7 @@ abstract class Objeto
     desenha();
   }
 
-  Objeto(double x, double y) {
+  Objeto(float x, float y) {
     this.x = x;
     this.y = y;
     largura = 60;
@@ -53,7 +61,7 @@ abstract class Objeto
     desenha();
   }
 
-  Objeto(double x, double y, double largura, double altura) {
+  Objeto(float x, float y, float largura, float altura) {
     this.x = x;
     this.y = y;
     this.largura = largura;
@@ -62,5 +70,8 @@ abstract class Objeto
   }
   /*construtores--------------------------------*/
 
+  /*metodos--------------------------------*/
   abstract void desenha();
+  abstract void atualiza();
+  /*metodos--------------------------------*/
 }
